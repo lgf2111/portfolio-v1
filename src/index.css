@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes fade-in {
+  0% {
+    background-color: rgba(5, 46, 22, 0);
+  }
+
+  100% {
+    background-color: rgba(5, 46, 22, .45);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    background-color: rgba(5, 46, 22, .45);
+  }
+
+  100% {
+    background-color: rgba(5, 46, 22, 0);
+  }
+}
+
+.animated-fade {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in {
+  animation-name: fade-in;
+}
+
+.fade-out {
+  animation-name: fade-out;
+}
